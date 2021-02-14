@@ -1,0 +1,16 @@
+﻿Step 1:
+Go to Protos folder,Create a protocol buffer file(proto) for making contracts.
+
+Step 2:
+If we are working on server side then select the proto file and right click on property.
+	2.1 
+	under gRPC section, Select gRPC stub classes, and Select Server only.
+	2.2
+	Under the Build Action, Select the Protobuf Compiler
+
+Step 3:
+Go to Services folder, Create a Service class. [Check the Source Code]
+
+Step 4:
+Map grpc Service Under the Configure method. [Check Source Code]
+

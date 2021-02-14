@@ -1,0 +1,26 @@
+﻿Step 1:
+Create a Protos folder,Create a protocol buffer file(proto) for making contracts.
+
+Step 2:
+If we are working on client side then select the proto file and right click on property.
+	2.1 
+	under gRPC section, Select gRPC stub classes, and Select Client only.
+	2.2
+	Under the Build Action, Select the Protobuf Compiler
+
+Step 3:
+Right click on Solution, Select the Add, Select Connected Service
+	4.1 Select the solution -> Right Click on Solution -> Select the Add -> Selected the Connected Service
+	4.2 Go to Service Referances (OpenApi, gRPC) -> Click on Add button.
+	4.3 Add service referance dialog box will open.
+	4.4 Select gRPC Service. -> Click on next button.
+	4.5 Browse File -> Select proto file
+	4.6 Click on Finish button. Package will download automatically and gRPC client code will generate.
+	4.7.Close the dialog.
+
+Step 3:
+Rebuild the entire solution.
+
+Step 4:
+Write a client code.
+

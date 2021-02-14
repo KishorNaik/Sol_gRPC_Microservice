@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Product.Grpc.Query";
+
+service GetAllProductGrpc {
+	rpc GetAllProduct(google.protobuf.Empty) returns (stream GetAllProductResponse);
+}
+
+message GetAllProductResponse {
+	string productIdentity=1;
+	string productName=2;
+	double unitPrice=3;
+}
